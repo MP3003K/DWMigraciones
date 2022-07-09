@@ -6,10 +6,91 @@
     <Name>DWMigraciones.database</Name>
     <FullPath>DWMigraciones.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>DW Migraciones.cube</Name>
+      <FullPath>DW Migraciones.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>DW Migraciones.partitions</Name>
+          <FullPath>DW Migraciones.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Tiempo.dim</Name>
+      <FullPath>Dim Tiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Paises.dim</Name>
+      <FullPath>Dim Paises.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tipos Acuerdo.dim</Name>
+      <FullPath>Dim Tipos Acuerdo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Acuerdos.dim</Name>
+      <FullPath>Dim Acuerdos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Eventos.dim</Name>
+      <FullPath>Dim Eventos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Regiones.dim</Name>
+      <FullPath>Dim Regiones.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim UND Organica.dim</Name>
+      <FullPath>Dim UND Organica.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Organizadores.dim</Name>
+      <FullPath>Dim Organizadores.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Modalidades.dim</Name>
+      <FullPath>Dim Modalidades.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Metas Produccion.dim</Name>
+      <FullPath>Dim Metas Produccion.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DW Migraciones.ds</Name>
+      <FullPath>DW Migraciones.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>DW Migraciones.dsv</Name>
+      <FullPath>DW Migraciones.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DW Migraciones</Id>
+            <Name>DW Migraciones</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-AM3V6L7;Integrated Security=SSPI;Initial Catalog=DWMigraciones</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DW Migraciones</Id>
+            <Name>DW Migraciones</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
